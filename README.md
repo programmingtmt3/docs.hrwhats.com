@@ -6,7 +6,8 @@
 
 ```bash
 npm install
-cp .env.example .env.local   # ثم عدّل اسم المستخدم وكلمة المرور والمفتاح
+cp .env.example .env.local   # ثم عدّل اسم المستخدم وكلمة المرور والمفتاح و DATABASE_URL
+npm run db:setup             # ينشئ قاعدة MySQL والجداول ويستورد data/content.json أول مرة
 npm run dev                  # http://localhost:3000
 ```
 
@@ -29,7 +30,8 @@ npm run build && npm start
 | `/admin/categories` | الأقسام (أيقونة، ترتيب، ظهور في الشريط العلوي) |
 | `/admin/settings` | عنوان الصفحة الرئيسية، التذييل، الروابط |
 
-- **المحتوى** يُخزَّن في `data/content.json` (يحتوي مقالات التصميم الأصلي كبداية).
+- **المحتوى** يُخزَّن في MySQL (الجداول في `db/schema.sql`، والوصول كله من `lib/db.ts`).
+  `data/content.json` هو المحتوى الأولي فقط، ويُستورد مرة واحدة عند تشغيل `npm run db:setup` على قاعدة فارغة.
 - **كتابة المقال**: محرر HTML فيه أزرار جاهزة (عنوان، قائمة، نصيحة، ملاحظة، Endpoint، كتلة كود، جدول) ومعاينة مباشرة.
   كتل الكود تُكتب هكذا ويضاف لها زر النسخ تلقائيًا: `<pre data-lang="JSON">...</pre>`
 - **الإنجليزية اختيارية**: إن تُركت فارغة يعرض الموقع النص العربي.
@@ -37,5 +39,5 @@ npm run build && npm start
 
 ## ملاحظة النشر
 
-التخزين في ملف JSON يناسب VPS أو Docker (مع volume على مجلد `data`). على Vercel وأشباهه نظام الملفات للقراءة فقط،
-فاستبدل الدوال في `lib/db.ts` (هي نقطة الوصول الوحيدة للبيانات) بقاعدة بيانات مثل Postgres أو SQLite/Turso.
+يعمل مع MySQL 8 أو MariaDB 10.4+. اضبط `DATABASE_URL` على الخادم ثم شغّل `npm run db:setup` مرة واحدة.
+الصور المرفوعة ما زالت تُحفظ في `data/uploads`، فعلى VPS أو Docker اجعل مجلد `data` دائمًا (volume).

@@ -30,9 +30,3 @@ export interface Settings {
   websiteUrl: string;
   privacyUrl: string;
 }
-
-export interface DB {
-  categories: Category[];
-  articles: Article[];
-  settings: Settings;
-}
