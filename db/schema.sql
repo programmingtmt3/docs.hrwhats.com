@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS categories (
   desc_en     TEXT         NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+
 -- تغيير رابط القسم ينتقل تلقائيًا لمقالاته، وحذف قسم فيه مقالات مرفوض.
 CREATE TABLE IF NOT EXISTS articles (
   id           VARCHAR(100) NOT NULL PRIMARY KEY,
