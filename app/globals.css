@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #e9f1ee; --card: #f8fbfa; --ink: #0f1b17; --muted: #5a6b65; --line: #d3dfda;
+  --brand: #12985a; --on: #fff; --soft: #dcebe5; --hero: #08392c; --hero2: #0d6a4d;
+  --code: #0c1512; --warn: #fff0c2; --warnl: #d9b343; --warni: #5b4500;
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --bg: #0b1210; --card: #121c19; --ink: #e8f2ee; --muted: #96aaa3; --line: #22332e;
+  --brand: #2fd37a; --on: #04170d; --soft: #173028; --hero: #06241b; --hero2: #0b4634;
+  --code: #070d0b; --warn: #2b2410; --warnl: #7a6320; --warni: #f1dc9a;
+  color-scheme: dark;
+}
+
+html { scroll-padding-top: 80px; }
+body { @apply bg-bg font-sans leading-[1.8] text-ink; }
+svg { flex: none; }
+
+@layer components {
+  .field { @apply w-full rounded-lg border border-line bg-card px-3 py-2 text-[15px] outline-none focus:border-brand; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-[10px] bg-brand px-5 py-2 text-[14.5px] font-semibold text-on no-underline transition hover:opacity-90 disabled:opacity-60; }
+  .btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-[10px] border border-line bg-card px-4 py-2 text-[14.5px] text-ink no-underline transition hover:border-brand; }
+  .btn-danger { @apply inline-flex items-center justify-center rounded-[10px] border border-red-400/60 px-4 py-2 text-[14.5px] text-red-600 transition hover:bg-red-500/10 dark:text-red-400; }
+}
+
+/* محتوى المقالات (HTML يكتبه المدير) */
+.prose-doc h3 { @apply mb-1 mt-7 text-[19px] font-bold; }
+.prose-doc p, .prose-doc ul, .prose-doc ol { @apply max-w-[72ch]; }
+.prose-doc p { @apply my-2; }
+.prose-doc ul { @apply list-disc ps-6; }
+.prose-doc ol { @apply list-decimal ps-6; }
+.prose-doc a { @apply text-brand; }
+.prose-doc img { @apply my-3.5 h-auto max-w-full rounded-[10px] border border-line; }
+.prose-doc code { @apply rounded-[5px] bg-soft px-1.5 py-px text-[.88em]; font-family: ui-monospace, Consolas, monospace; direction: ltr; unicode-bidi: isolate; }
+.prose-doc .note, .prose-doc .tip { @apply my-3.5 rounded-[10px] px-3.5 py-2.5 text-[14.5px]; }
+.prose-doc .note { @apply border border-warnl bg-warn text-warni; }
+.prose-doc .tip { @apply bg-soft; }
+.prose-doc table { @apply my-3 block max-w-full overflow-x-auto border-collapse text-[14.5px]; }
+.prose-doc th, .prose-doc td { @apply border border-line px-3 py-1.5 text-start; }
+.prose-doc th { @apply bg-soft; }
+.prose-doc .ep { @apply my-3.5 flex items-center gap-2.5 overflow-x-auto rounded-lg border border-line bg-bg px-3 py-2 text-sm; direction: ltr; font-family: ui-monospace, Consolas, monospace; }
+.prose-doc .ep i { @apply rounded-[5px] bg-brand px-2 py-px text-[12.5px] font-bold not-italic text-on; }
+.prose-doc .code { @apply my-3.5 overflow-hidden rounded-[10px] bg-code; direction: ltr; }
+.prose-doc .code-h { @apply flex items-center justify-between px-4 pt-2.5 text-[11px] tracking-[.08em] text-[#8fa59d]; font-family: ui-monospace, Consolas, monospace; }
+.prose-doc .code-h button { @apply border-0 bg-transparent p-0.5 text-[#8fa59d] hover:text-[#2fd37a]; }
+.prose-doc pre { @apply m-0 overflow-x-auto px-4 pb-4 pt-2.5 text-left text-[13.5px] leading-[1.7] text-[#d6efe2]; font-family: ui-monospace, Consolas, monospace; }

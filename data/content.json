@@ -1,0 +1,404 @@
+{
+  "categories": [
+    {
+      "id": "c-start",
+      "icon": "rocket",
+      "order": 1,
+      "nav": false,
+      "title": {
+        "ar": "البداية",
+        "en": "Getting started"
+      },
+      "description": {
+        "ar": "تعرّف على المنصة وابدأ خلال دقائق.",
+        "en": "Learn the platform and get going in minutes."
+      }
+    },
+    {
+      "id": "c-contacts",
+      "icon": "chat",
+      "order": 2,
+      "nav": false,
+      "title": {
+        "ar": "جهات الاتصال والدردشات",
+        "en": "Contacts & chats"
+      },
+      "description": {
+        "ar": "أضف عملاءك وأدر محادثاتهم وصنّفهم.",
+        "en": "Add customers, manage and classify conversations."
+      }
+    },
+    {
+      "id": "c-campaigns",
+      "icon": "list",
+      "order": 3,
+      "nav": false,
+      "title": {
+        "ar": "الحملات والقوالب",
+        "en": "Campaigns & templates"
+      },
+      "description": {
+        "ar": "أنشئ قوالب معتمدة وأطلق حملاتك.",
+        "en": "Create approved templates and launch your campaigns."
+      }
+    },
+    {
+      "id": "c-automation",
+      "icon": "grid",
+      "order": 4,
+      "nav": false,
+      "title": {
+        "ar": "الأتمتة والأدوات",
+        "en": "Automation & tools"
+      },
+      "description": {
+        "ar": "ردود تلقائية وأدوات تربط واتساب بموقعك.",
+        "en": "Auto replies and tools that connect WhatsApp to your site."
+      }
+    },
+    {
+      "id": "c-api",
+      "icon": "code",
+      "order": 5,
+      "nav": true,
+      "title": {
+        "ar": "الـ API والربط",
+        "en": "API & integrations"
+      },
+      "description": {
+        "ar": "المصادقة وإرسال الرسائل وOTP وWebhooks.",
+        "en": "Authentication, messaging, OTP and webhooks."
+      }
+    },
+    {
+      "id": "c-support",
+      "icon": "chat",
+      "order": 6,
+      "nav": true,
+      "title": {
+        "ar": "الدعم الفني",
+        "en": "Support"
+      },
+      "description": {
+        "ar": "تواصل مع فريقنا على مدار الساعة.",
+        "en": "Reach our team around the clock."
+      }
+    }
+  ],
+  "articles": [
+    {
+      "id": "intro",
+      "categoryId": "c-start",
+      "order": 1,
+      "published": true,
+      "updatedAt": "2026-10-31T10:14:52.850Z",
+      "title": {
+        "ar": "مقدمة",
+        "en": "Introduction"
+      },
+      "body": {
+        "ar": "\r\n<p>HRwhats منصة تجمع واتساب الرسمي مع نظام CRM: حملات جماعية آمنة، وإدارة الدردشات بين فريقك، وردود آلية، ورسائل OTP، وربط موقعك أو متجرك بالمنصة.</p>",
+        "en": "<p>HRwhats combines the official WhatsApp API with a CRM: safe bulk campaigns, team inbox, automated replies, OTP messages, and integration with your website or store.</p>"
+      }
+    },
+    {
+      "id": "start",
+      "categoryId": "c-start",
+      "order": 2,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "البدء السريع",
+        "en": "Quick start"
+      },
+      "body": {
+        "ar": "<ol><li><a href=\"https://app.hrwhats.com/signup\">أنشئ حسابك</a> وجرّب المنصة أسبوعين مجانًا.</li><li>جهّز مستندات التحقق والتوثيق من Meta. الاشتراك شرط لإتمام التوثيق، وتستغرق العملية من 14 إلى 28 يومًا.</li><li>اربط رقم واتساب للأعمال، ويمكنك استخدام رقمك الحالي.</li><li>أنشئ قالبًا وانتظر اعتماده.</li><li>أضف جهات الاتصال وأطلق أول حملة.</li></ol><div class=\"tip\"><a href=\"https://hrwhats.com/documentation-requirements-for-meta/\">متطلبات التحقق والتوثيق</a> · <a href=\"https://hrwhats.com/link-account/\">خطوات ربط الحساب</a></div>",
+        "en": "<ol><li><a href=\"https://app.hrwhats.com/signup\">Create your account</a> and try the platform free for two weeks.</li><li>Prepare Meta verification documents. A subscription is required to complete verification, which takes 14 to 28 days.</li><li>Connect your WhatsApp Business number. You can keep your current number.</li><li>Create a template and wait for approval.</li><li>Add contacts and launch your first campaign.</li></ol><div class=\"tip\"><a href=\"https://hrwhats.com/documentation-requirements-for-meta/\">Verification requirements</a> · <a href=\"https://hrwhats.com/link-account/\">Account linking steps</a></div>"
+      }
+    },
+    {
+      "id": "dashboard",
+      "categoryId": "c-start",
+      "order": 3,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "لوحة التحكم",
+        "en": "Dashboard"
+      },
+      "body": {
+        "ar": "<p>نظرة سريعة على أداء الحساب: الإحصائيات ومعدلات الأداء وتحليلات الدردشات والاشتراك النشط. ومنها تنشئ حملة أو قالبًا أو تضيف جهة اتصال مباشرة.</p>",
+        "en": "<p>A quick view of account performance: statistics, performance rates, chat analytics, and your active subscription. From here you can create a campaign, a template, or add a contact.</p>"
+      }
+    },
+    {
+      "id": "contacts",
+      "categoryId": "c-contacts",
+      "order": 1,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "جهات الاتصال",
+        "en": "Contacts"
+      },
+      "body": {
+        "ar": "<p>اعرض كل الاتصالات أو تصفح المجموعات، وأضف جهات اتصال يدويًا أو دفعة واحدة.</p><h3>الإضافة اليدوية</h3><ol><li>اضغط إضافة جهة اتصال.</li><li>أدخل الاسم الأول ورقم الهاتف مع رمز الدولة، ويمكنك إضافة البريد والمجموعة وبيانات إضافية.</li><li>اضغط حفظ.</li></ol><h3>الرفع المجمع</h3><p>اضغط تحميل مجمع وارفع ملف <code>CSV</code> أو <code>XLSX</code>. تفرز المنصة الأرقام الخاطئة تلقائيًا.</p>",
+        "en": "<p>View all contacts or browse groups, and add contacts manually or in bulk.</p><h3>Manual entry</h3><ol><li>Click Add contact.</li><li>Enter first name and phone with country code. You can also add email, group, and extra fields.</li><li>Click Save.</li></ol><h3>Bulk upload</h3><p>Click Bulk upload and select a <code>CSV</code> or <code>XLSX</code> file. Invalid numbers are filtered automatically.</p>"
+      }
+    },
+    {
+      "id": "chats",
+      "categoryId": "c-contacts",
+      "order": 2,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "الدردشات",
+        "en": "Chats"
+      },
+      "body": {
+        "ar": "<p>تعرض المحادثات الواردة والصادرة. ابحث بالاسم أو الرقم، وصفِّ حسب الوسوم، وصنّف العميل، وعيّن المحادثة لموظف، وردّ برسالة أو بقالب جاهز.</p><div class=\"tip\">تتحول الدردشة إلى مغلقة بعد 24 ساعة من رسالة العميل دون رد، وتجدها في صفحة الدردشات المغلقة.</div>",
+        "en": "<p>Shows incoming and outgoing conversations. Search by name or number, filter by tags, classify the customer, assign the chat to an agent, and reply with a message or a ready template.</p><div class=\"tip\">A chat becomes closed after 24 hours without a reply to the customer’s message. Find it under Closed chats.</div>"
+      }
+    },
+    {
+      "id": "filter",
+      "categoryId": "c-contacts",
+      "order": 3,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "فلتر الكلمات والفئات",
+        "en": "Keyword filter & audiences"
+      },
+      "body": {
+        "ar": "<p>يصنف العملاء تلقائيًا بحسب كلمات في رسائلهم: <b>كلمات الحظر</b> لاستبعاد من لا تريد استهدافهم، و<b>كلمات الاهتمام</b> لتحديد المهتمين. أدخل الكلمات ثم احفظ الإعدادات.</p><p>تعرض صفحة الفئات المستهدفة جهات الاتصال بحسب الحالة: عميل محتمل، مهتم، مؤكد، ملغي أو محظور.</p>",
+        "en": "<p>Customers are classified automatically by words in their messages: <b>block words</b> exclude people you don’t want to target, and <b>interest words</b> identify interested ones. Enter the words and save settings.</p><p>The Audiences page lists contacts by status: lead, interested, confirmed, or cancelled/blocked.</p>"
+      }
+    },
+    {
+      "id": "templates",
+      "categoryId": "c-campaigns",
+      "order": 1,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "القوالب",
+        "en": "Templates"
+      },
+      "body": {
+        "ar": "<p>القوالب رسائل معتمدة من Meta تُستخدم في الحملات وللبدء بمحادثة. حدد الاسم والفئة واللغة ثم نوع المحتوى:</p><table><tr><th>النوع</th><th>الاستخدام</th><th>الصيغة</th></tr><tr><td>نص</td><td>رسالة مع متغيرات للتخصيص</td><td>—</td></tr><tr><td>صورة</td><td>صورة مع نص</td><td>حسب النظام</td></tr><tr><td>فيديو</td><td>فيديو مع نص</td><td>MP4</td></tr><tr><td>مستند</td><td>ملف مرفق</td><td>PDF</td></tr><tr><td>عرض دوار</td><td>بطاقات متتابعة بصورة ووصف</td><td>—</td></tr></table><p>راجع شاشة المعاينة قبل الإرسال للاعتماد.</p><h3>القالب الدوار</h3><ol><li>اضغط إنشاء قالب عرض دوار.</li><li>أدخل الاسم واللغة والتصنيف والنص الترويجي.</li><li>أضف صورة ووصفًا لكل بطاقة، واضغط إضافة بطاقة للمزيد.</li></ol>",
+        "en": "<p>Templates are Meta-approved messages used in campaigns and to start conversations. Set the name, category, and language, then choose a content type:</p><table><tr><th>Type</th><th>Use</th><th>Format</th></tr><tr><td>Text</td><td>Message with variables</td><td>—</td></tr><tr><td>Image</td><td>Image with text</td><td>As shown in app</td></tr><tr><td>Video</td><td>Video with text</td><td>MP4</td></tr><tr><td>Document</td><td>Attached file</td><td>PDF</td></tr><tr><td>Carousel</td><td>Cards with image and description</td><td>—</td></tr></table><p>Check the preview before submitting for approval.</p><h3>Carousel template</h3><ol><li>Click Create carousel template.</li><li>Enter name, language, category, and promo text.</li><li>Add an image and description to each card, and click Add card for more.</li></ol>"
+      }
+    },
+    {
+      "id": "campaigns",
+      "categoryId": "c-campaigns",
+      "order": 2,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "الحملات الإعلانية",
+        "en": "Campaigns"
+      },
+      "body": {
+        "ar": "<p>تعرض الصفحة اسم الحملة والقالب ومعدل القراءة ومعدل التوصيل والحالة.</p><h3>إنشاء حملة</h3><ol><li>اضغط إنشاء حملة وأدخل اسمها.</li><li>اختر القالب.</li><li>حدد جهات الاتصال أو المجموعة في إرسال إلى.</li><li>اختر التاريخ والوقت، أو فعّل الإرسال الفوري.</li><li>اضغط حفظ.</li></ol><h3>نتائج الحملة</h3><p>تعرض نسبة التنفيذ وحالة كل رسالة. يمكنك تصدير البيانات بصيغة CSV، أو إنشاء مجموعة بالأرقام الفاشلة لإعادة الإرسال لها.</p>",
+        "en": "<p>Lists each campaign with its template, read rate, delivery rate, and status.</p><h3>Create a campaign</h3><ol><li>Click Create campaign and enter a name.</li><li>Choose the template.</li><li>Select contacts or a group under Send to.</li><li>Pick a date and time, or enable immediate sending.</li><li>Click Save.</li></ol><h3>Campaign results</h3><p>Shows progress and each message’s status. You can export data as CSV, or create a group from failed numbers to resend.</p>"
+      }
+    },
+    {
+      "id": "peak",
+      "categoryId": "c-campaigns",
+      "order": 3,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "أوقات الذروة",
+        "en": "Peak times"
+      },
+      "body": {
+        "ar": "<p>خريطة حرارية لتفاعل عملائك خلال آخر 30 يومًا بحسب أيام الأسبوع وساعات اليوم. استخدمها لاختيار أنسب موعد للحملة.</p>",
+        "en": "<p>A heatmap of customer activity over the last 30 days by weekday and hour. Use it to choose the best time for a campaign.</p>"
+      }
+    },
+    {
+      "id": "automation",
+      "categoryId": "c-automation",
+      "order": 1,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "الأتمتة",
+        "en": "Automation"
+      },
+      "body": {
+        "ar": "<p>ردود تلقائية على رسائل العملاء، مع إمكانية استخدام الذكاء الاصطناعي.</p><ol><li>اضغط الأتمتة ثم إنشاء.</li><li>أدخل الاسم والمشغّل (الكلمة التي تبدأ الرد).</li><li>حدد معيار التطابق ونص الاستجابة.</li><li>اضغط حفظ.</li></ol>",
+        "en": "<p>Automatic replies to customer messages, with optional AI-powered responses.</p><ol><li>Click Automation, then Create.</li><li>Enter the name and trigger (the word that starts the reply).</li><li>Set the match criteria and response text.</li><li>Click Save.</li></ol>"
+      }
+    },
+    {
+      "id": "tools",
+      "categoryId": "c-automation",
+      "order": 2,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "أدوات مساعدة",
+        "en": "Tools"
+      },
+      "body": {
+        "ar": "<h3>أداة واتساب للموقع</h3><ol><li>اضغط أداة واتساب وأدخل رقم الهاتف.</li><li>اكتب رسالة الترحيب واختر لون الأداة وموضعها.</li><li>اضغط إنشاء كود الأداة وانسخه إلى موقعك.</li></ol><h3>باركود واتساب</h3><ol><li>اضغط HR باركود ثم إنشاء باركود جديد.</li><li>أدخل اسم النشاط واختر شكل الباركود ولونه.</li><li>أدخل رقم واتساب والرسالة الترحيبية ثم اضغط إنشاء باركود.</li></ol>",
+        "en": "<h3>Website WhatsApp widget</h3><ol><li>Click WhatsApp widget and enter the phone number.</li><li>Write the welcome message and choose the widget color and position.</li><li>Click Generate widget code and paste it into your site.</li></ol><h3>WhatsApp QR code</h3><ol><li>Click HR QR, then Create new QR.</li><li>Enter the business name and choose the QR style and color.</li><li>Enter the WhatsApp number and welcome message, then click Create QR.</li></ol>"
+      }
+    },
+    {
+      "id": "api",
+      "categoryId": "c-api",
+      "order": 1,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "نظرة عامة",
+        "en": "Overview"
+      },
+      "body": {
+        "ar": "<p>اربط موقعك أو متجرك أو نظامك الداخلي بالمنصة لإرسال الرسائل والقوالب، وإضافة جهات الاتصال، واستقبال الردود.</p><div class=\"note\">هذه المسارات والحقول أمثلة مؤقتة، استبدلها ببيانات الـ API الفعلية قبل النشر.</div><table><tr><th>البند</th><th>القيمة</th></tr><tr><td>Base URL</td><td><code>https://api.hrwhats.com/v1</code></td></tr><tr><td>الصيغة</td><td>JSON</td></tr><tr><td>التشفير</td><td>HTTPS</td></tr></table>",
+        "en": "<p>Connect your website, store, or internal system to send messages and templates, add contacts, and receive replies.</p><div class=\"note\">Paths and fields here are placeholders. Replace them with your real API details before publishing.</div><table><tr><th>Item</th><th>Value</th></tr><tr><td>Base URL</td><td><code>https://api.hrwhats.com/v1</code></td></tr><tr><td>Format</td><td>JSON</td></tr><tr><td>Transport</td><td>HTTPS</td></tr></table>"
+      }
+    },
+    {
+      "id": "api-auth",
+      "categoryId": "c-api",
+      "order": 2,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "المصادقة",
+        "en": "Authentication"
+      },
+      "body": {
+        "ar": "<p>أنشئ مفتاح API من لوحة التحكم وأرسله في ترويسة كل طلب. لا تضعه في كود الواجهة الأمامية.</p><pre data-lang=\"HTTP\">Authorization: Bearer YOUR_API_KEY\nContent-Type: application/json</pre>",
+        "en": "<p>Create an API key in the dashboard and send it in every request header. Never expose it in front-end code.</p><pre data-lang=\"HTTP\">Authorization: Bearer YOUR_API_KEY\nContent-Type: application/json</pre>"
+      }
+    },
+    {
+      "id": "api-send",
+      "categoryId": "c-api",
+      "order": 3,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "إرسال رسالة",
+        "en": "Send a message"
+      },
+      "body": {
+        "ar": "<p>إرسال رسالة نصية لعميل راسلك خلال آخر 24 ساعة.</p><div class=\"ep\"><i>POST</i>/messages</div><table><tr><th>الحقل</th><th>الوصف</th></tr><tr><td><code>to</code></td><td>رقم المستلم بالصيغة الدولية بدون +</td></tr><tr><td><code>type</code></td><td>نوع الرسالة، مثل text</td></tr><tr><td><code>text</code></td><td>نص الرسالة</td></tr></table><pre data-lang=\"BASH\">curl -X POST https://api.hrwhats.com/v1/messages \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"to\":\"9665XXXXXXXX\",\"type\":\"text\",\"text\":\"Hello from HRwhats\"}'</pre><pre data-lang=\"JSON\">{\n  \"success\": true,\n  \"message_id\": \"MSG_ID\",\n  \"status\": \"queued\"\n}</pre>",
+        "en": "<p>Send a text message to a customer who wrote to you in the last 24 hours.</p><div class=\"ep\"><i>POST</i>/messages</div><table><tr><th>Field</th><th>Description</th></tr><tr><td><code>to</code></td><td>Recipient number in international format, no +</td></tr><tr><td><code>type</code></td><td>Message type, e.g. text</td></tr><tr><td><code>text</code></td><td>Message body</td></tr></table><pre data-lang=\"BASH\">curl -X POST https://api.hrwhats.com/v1/messages \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"to\":\"9665XXXXXXXX\",\"type\":\"text\",\"text\":\"Hello from HRwhats\"}'</pre><pre data-lang=\"JSON\">{\n  \"success\": true,\n  \"message_id\": \"MSG_ID\",\n  \"status\": \"queued\"\n}</pre>"
+      }
+    },
+    {
+      "id": "api-template",
+      "categoryId": "c-api",
+      "order": 4,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "إرسال قالب",
+        "en": "Send a template"
+      },
+      "body": {
+        "ar": "<p>لبدء محادثة أو بعد مرور 24 ساعة، استخدم قالبًا معتمدًا.</p><div class=\"ep\"><i>POST</i>/messages/template</div><pre data-lang=\"JSON\">{\n  \"to\": \"9665XXXXXXXX\",\n  \"template\": \"YOUR_TEMPLATE_NAME\",\n  \"language\": \"ar\",\n  \"variables\": [\"Mohammed\", \"12345\"]\n}</pre>",
+        "en": "<p>To start a conversation or after the 24-hour window, use an approved template.</p><div class=\"ep\"><i>POST</i>/messages/template</div><pre data-lang=\"JSON\">{\n  \"to\": \"9665XXXXXXXX\",\n  \"template\": \"YOUR_TEMPLATE_NAME\",\n  \"language\": \"ar\",\n  \"variables\": [\"Mohammed\", \"12345\"]\n}</pre>"
+      }
+    },
+    {
+      "id": "api-contacts",
+      "categoryId": "c-api",
+      "order": 5,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "جهات الاتصال",
+        "en": "Contacts"
+      },
+      "body": {
+        "ar": "<p>أضف جهة اتصال إلى مجموعة، مثل تسجيل عميل جديد من نموذج في موقعك.</p><div class=\"ep\"><i>POST</i>/contacts</div><pre data-lang=\"JSON\">{\n  \"first_name\": \"Mohammed\",\n  \"phone\": \"9665XXXXXXXX\",\n  \"email\": \"name@example.com\",\n  \"group\": \"YOUR_GROUP_NAME\"\n}</pre>",
+        "en": "<p>Add a contact to a group, for example a new lead from a form on your site.</p><div class=\"ep\"><i>POST</i>/contacts</div><pre data-lang=\"JSON\">{\n  \"first_name\": \"Mohammed\",\n  \"phone\": \"9665XXXXXXXX\",\n  \"email\": \"name@example.com\",\n  \"group\": \"YOUR_GROUP_NAME\"\n}</pre>"
+      }
+    },
+    {
+      "id": "api-otp",
+      "categoryId": "c-api",
+      "order": 6,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "رسائل OTP",
+        "en": "OTP messages"
+      },
+      "body": {
+        "ar": "<p>أرسل رمز التحقق لمستخدمي موقعك عبر واتساب باستخدام قالب من فئة المصادقة.</p><div class=\"ep\"><i>POST</i>/otp/send</div><pre data-lang=\"JSON\">{\n  \"to\": \"9665XXXXXXXX\",\n  \"template\": \"YOUR_OTP_TEMPLATE\",\n  \"language\": \"ar\"\n}</pre><div class=\"ep\"><i>POST</i>/otp/verify</div><pre data-lang=\"JSON\">{\n  \"to\": \"9665XXXXXXXX\",\n  \"code\": \"123456\"\n}</pre>",
+        "en": "<p>Send verification codes to your site’s users via WhatsApp using an authentication-category template.</p><div class=\"ep\"><i>POST</i>/otp/send</div><pre data-lang=\"JSON\">{\n  \"to\": \"9665XXXXXXXX\",\n  \"template\": \"YOUR_OTP_TEMPLATE\",\n  \"language\": \"ar\"\n}</pre><div class=\"ep\"><i>POST</i>/otp/verify</div><pre data-lang=\"JSON\">{\n  \"to\": \"9665XXXXXXXX\",\n  \"code\": \"123456\"\n}</pre>"
+      }
+    },
+    {
+      "id": "api-webhooks",
+      "categoryId": "c-api",
+      "order": 7,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "Webhooks",
+        "en": "Webhooks"
+      },
+      "body": {
+        "ar": "<p>سجّل رابطًا في حسابك لاستقبال الرسائل الواردة وتحديثات الحالة (إرسال، توصيل، قراءة، فشل). يجب أن يرد الرابط بالحالة <code>200</code> سريعًا.</p><pre data-lang=\"JSON\">{\n  \"event\": \"message.status\",\n  \"message_id\": \"MSG_ID\",\n  \"status\": \"delivered\",\n  \"timestamp\": 1760000000\n}</pre>",
+        "en": "<p>Register a URL in your account to receive incoming messages and status updates (sent, delivered, read, failed). Your endpoint must reply with <code>200</code> quickly.</p><pre data-lang=\"JSON\">{\n  \"event\": \"message.status\",\n  \"message_id\": \"MSG_ID\",\n  \"status\": \"delivered\",\n  \"timestamp\": 1760000000\n}</pre>"
+      }
+    },
+    {
+      "id": "api-errors",
+      "categoryId": "c-api",
+      "order": 8,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "رموز الأخطاء",
+        "en": "Error codes"
+      },
+      "body": {
+        "ar": "<table><tr><th>الرمز</th><th>المعنى</th></tr><tr><td><code>400</code></td><td>طلب غير صالح: تحقق من الحقول وصيغة الرقم</td></tr><tr><td><code>401</code></td><td>مفتاح API مفقود أو خاطئ</td></tr><tr><td><code>403</code></td><td>لا صلاحية، أو الاشتراك منتهٍ</td></tr><tr><td><code>404</code></td><td>العنصر غير موجود</td></tr><tr><td><code>429</code></td><td>تجاوزت حد الطلبات، أعد المحاولة بعد قليل</td></tr><tr><td><code>500</code></td><td>خطأ في الخادم</td></tr></table>",
+        "en": "<table><tr><th>Code</th><th>Meaning</th></tr><tr><td><code>400</code></td><td>Invalid request: check fields and number format</td></tr><tr><td><code>401</code></td><td>Missing or invalid API key</td></tr><tr><td><code>403</code></td><td>No permission, or subscription expired</td></tr><tr><td><code>404</code></td><td>Resource not found</td></tr><tr><td><code>429</code></td><td>Rate limit exceeded, retry shortly</td></tr><tr><td><code>500</code></td><td>Server error</td></tr></table>"
+      }
+    },
+    {
+      "id": "support",
+      "categoryId": "c-support",
+      "order": 1,
+      "published": true,
+      "updatedAt": "2026-10-31T09:52:54.072Z",
+      "title": {
+        "ar": "الدعم الفني",
+        "en": "Support"
+      },
+      "body": {
+        "ar": "<p>فريق الدعم متاح على مدار الساعة.</p><ul><li>واتساب: <a href=\"https://wa.me/966531664058\">966531664058</a></li><li>الهاتف: <code>0544882560</code></li><li>البريد: <a href=\"mailto:info@hrwhats.com\">info@hrwhats.com</a></li></ul>",
+        "en": "<p>Our support team is available 24/7.</p><ul><li>WhatsApp: <a href=\"https://wa.me/966531664058\">966531664058</a></li><li>Phone: <code>0544882560</code></li><li>Email: <a href=\"mailto:info@hrwhats.com\">info@hrwhats.com</a></li></ul>"
+      }
+    }
+  ],
+  "settings": {
+    "siteName": "HRwhats",
+    "heroTitle": {
+      "ar": "كيف نقدر نساعدك؟",
+      "en": "Let’s get you the answers you need."
+    },
+    "footerText": {
+      "ar": "HRwhats، أحد منتجات وكالة تمتع معنا للدعاية والإعلان وتقنية المعلومات",
+      "en": "HRwhats, a product of Tamta Maana Advertising & IT Agency"
+    },
+    "whatsappUrl": "https://wa.me/966531664058",
+    "websiteUrl": "https://hrwhats.com/",
+    "privacyUrl": "https://hrwhats.com/privacy-policy/"
+  }
+}
