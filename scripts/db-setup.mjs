@@ -1,12 +1,11 @@
 // إنشاء الجداول، ثم استيراد data/content.json إن كانت فارغة. آمن للتكرار، ويعمل تلقائيًا مع npm run build.
-// التشغيل: npm run db:setup  (يقرأ DATABASE_URL من متغيرات البيئة أو من .env.local)
+// التشغيل: npm run db:setup  (يقرأ DATABASE_URL من متغيرات البيئة أو ملفات .env بنفس ترتيب Next.js)
 import { promises as fs } from "fs";
 import path from "path";
 import mysql from "mysql2/promise";
+import nextEnv from "@next/env";
 
-try {
-  process.loadEnvFile?.(".env.local");
-} catch {} // الملف غير موجود على الخادم: المتغيرات تأتي من إعدادات الاستضافة
+nextEnv.loadEnvConfig(process.cwd(), false, { info() {}, error: console.error });
 
 const fail = (msg) => {
   console.error(`✗ db:setup: ${msg}`);
@@ -27,6 +26,7 @@ try {
   db = await mysql.createConnection(opts);
 } catch (e) {
   // القاعدة غير موجودة (محليًا غالبًا): ننشئها. في الاستضافة المشتركة تكون موجودة مسبقًا.
+  if (e instanceof URIError) fail("DATABASE_URL غير صالح: رموز مثل % @ # / : في كلمة المرور يجب ترميزها (مثلًا % تصبح %25 و @ تصبح %40).");
   if (e.code !== "ER_BAD_DB_ERROR") fail(`تعذّر الاتصال بقاعدة البيانات (${e.code ?? e.message}).`);
   url.pathname = "/";
   const server = await mysql.createConnection({ uri: url.toString(), charset: "utf8mb4" });
