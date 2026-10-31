@@ -83,6 +83,20 @@
         "ar": "تواصل مع فريقنا على مدار الساعة.",
         "en": "Reach our team around the clock."
       }
+    },
+    {
+      "id": "rew",
+      "icon": "chat",
+      "order": 1,
+      "nav": true,
+      "title": {
+        "ar": "مقدمة",
+        "en": "test"
+      },
+      "description": {
+        "ar": "werr",
+        "en": "rwe"
+      }
     }
   ],
   "articles": [
