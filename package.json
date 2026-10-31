@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run db:setup && next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "db:setup": "node --env-file-if-exists=.env.local scripts/db-setup.mjs"
+    "db:setup": "node scripts/db-setup.mjs"
   },
   "dependencies": {
     "jose": "^5.9.6",

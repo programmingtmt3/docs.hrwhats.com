@@ -1,29 +1,39 @@
-// إنشاء قاعدة البيانات والجداول، ثم استيراد data/content.json إن كانت الجداول فارغة.
-// التشغيل: npm run db:setup  (يقرأ DATABASE_URL من .env.local)
+// إنشاء الجداول، ثم استيراد data/content.json إن كانت فارغة. آمن للتكرار، ويعمل تلقائيًا مع npm run build.
+// التشغيل: npm run db:setup  (يقرأ DATABASE_URL من متغيرات البيئة أو من .env.local)
 import { promises as fs } from "fs";
 import path from "path";
 import mysql from "mysql2/promise";
 
-const uri = process.env.DATABASE_URL;
-if (!uri) {
-  console.error("DATABASE_URL غير معرّف. أضفه في .env.local");
+try {
+  process.loadEnvFile?.(".env.local");
+} catch {} // الملف غير موجود على الخادم: المتغيرات تأتي من إعدادات الاستضافة
+
+const fail = (msg) => {
+  console.error(`✗ db:setup: ${msg}`);
   process.exit(1);
-}
+};
+
+const uri = process.env.DATABASE_URL;
+if (!uri) fail("DATABASE_URL غير معرّف. أضفه في متغيرات البيئة (أو .env.local محليًا).");
 
 const url = new URL(uri);
 const dbName = decodeURIComponent(url.pathname.slice(1));
-if (!/^[A-Za-z0-9_]+$/.test(dbName)) {
-  console.error("اسم قاعدة البيانات في DATABASE_URL غير صالح.");
-  process.exit(1);
-}
+if (!/^[A-Za-z0-9_]+$/.test(dbName)) fail("اسم قاعدة البيانات في DATABASE_URL غير صالح.");
 
 const root = process.cwd();
-url.pathname = "/";
-const server = await mysql.createConnection({ uri: url.toString(), charset: "utf8mb4" });
-await server.query(`CREATE DATABASE IF NOT EXISTS \`${dbName}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci`);
-await server.end();
-
-const db = await mysql.createConnection({ uri, charset: "utf8mb4", timezone: "Z", multipleStatements: true });
+const opts = { uri, charset: "utf8mb4", timezone: "Z", multipleStatements: true };
+let db;
+try {
+  db = await mysql.createConnection(opts);
+} catch (e) {
+  // القاعدة غير موجودة (محليًا غالبًا): ننشئها. في الاستضافة المشتركة تكون موجودة مسبقًا.
+  if (e.code !== "ER_BAD_DB_ERROR") fail(`تعذّر الاتصال بقاعدة البيانات (${e.code ?? e.message}).`);
+  url.pathname = "/";
+  const server = await mysql.createConnection({ uri: url.toString(), charset: "utf8mb4" });
+  await server.query(`CREATE DATABASE IF NOT EXISTS \`${dbName}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci`);
+  await server.end();
+  db = await mysql.createConnection(opts);
+}
 await db.query(await fs.readFile(path.join(root, "db", "schema.sql"), "utf8"));
 console.log(`✓ الجداول جاهزة في ${dbName}`);
 
