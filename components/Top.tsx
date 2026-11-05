@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getCategories, getSettings, pick } from "@/lib/db";
 import { getLang, U } from "@/lib/i18n";
 import { LangToggle } from "./LangToggle";
+import { Logo } from "./Logo";
 import { SearchBox } from "./SearchBox";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -15,7 +16,7 @@ export async function Top({ home = false }: { home?: boolean }) {
     <header className="bg-gradient-to-br from-hero to-hero2 pt-[env(safe-area-inset-top,0px)] text-white">
       <div className="mx-auto flex min-h-[66px] max-w-site flex-wrap items-center gap-4 px-3.5 py-2.5 md:flex-nowrap md:px-6 md:py-3.5">
         <Link href="/" className="flex items-center gap-2.5 text-xl font-bold text-white no-underline">
-          <svg width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="#1fbf74" /><text x="16" y="21" textAnchor="middle" fontSize="13" fontWeight="800" fill="#04170d" fontFamily="Arial,sans-serif">HR</text></svg>
+          <Logo />
           {settings.siteName} <small className="text-[13px] font-normal opacity-70">Help Center</small>
         </Link>
         <span className="flex-1" />
