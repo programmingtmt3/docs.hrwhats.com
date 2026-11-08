@@ -47,3 +47,35 @@ svg { flex: none; }
 .prose-doc .code-h { @apply flex items-center justify-between px-4 pt-2.5 text-[11px] tracking-[.08em] text-[#8fa59d]; font-family: ui-monospace, Consolas, monospace; }
 .prose-doc .code-h button { @apply border-0 bg-transparent p-0.5 text-[#8fa59d] hover:text-[#2fd37a]; }
 .prose-doc pre { @apply m-0 overflow-x-auto px-4 pb-4 pt-2.5 text-left text-[13.5px] leading-[1.7] text-[#d6efe2]; font-family: ui-monospace, Consolas, monospace; }
+.prose-doc > p.is-empty::before {
+  content: attr(data-placeholder);
+  float: inline-start;
+  height: 0;
+  opacity: .45;
+  pointer-events: none;
+}
+.prose-doc li > p,
+.prose-doc td > p,
+.prose-doc th > p { margin: 0; }
+.prose-doc table { border-collapse: collapse; }
+.prose-doc td, .prose-doc th { min-width: 80px; vertical-align: top; }
+.prose-doc .tableWrapper { overflow-x: auto; }
+.prose-doc .selectedCell { background: rgba(0, 0, 0, .06); }
+.prose-doc img.ProseMirror-selectednode { outline: 2px solid var(--brand); }
+.prose-doc mark { border-radius: 4px; padding: 0 3px; }
+.prose-doc > p.is-empty::before {
+  content: attr(data-placeholder);
+  float: inline-start;
+  height: 0;
+  opacity: .45;
+  pointer-events: none;
+}
+.prose-doc li > p,
+.prose-doc td > p,
+.prose-doc th > p { margin: 0; }
+.prose-doc table { border-collapse: collapse; }
+.prose-doc td, .prose-doc th { min-width: 80px; vertical-align: top; }
+.prose-doc .tableWrapper { overflow-x: auto; }
+.prose-doc .selectedCell { background: rgba(0, 0, 0, .06); }
+.prose-doc img.ProseMirror-selectednode { outline: 2px solid var(--brand); }
+.prose-doc mark { border-radius: 4px; padding: 0 3px; }
